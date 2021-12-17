@@ -1,6 +1,7 @@
 package com.damoa.web;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ public class ApiController {
         return "{\"result\" : \"success\"}";
     }
 
+    @CrossOrigin("*")
     @GetMapping("/api/user/notice/")
     public String getNotice(){
         return "{\"data\": [\n" +
