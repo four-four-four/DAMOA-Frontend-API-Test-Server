@@ -17,7 +17,7 @@ public class ApiController {
     }
 
 
-    @GetMapping("/api/user/notice/")
+    @GetMapping("/api/v1/notices")
     public String getNotice(){
         return "{\"data\": [\n" +
                 "    {\"notice_id\": 1, \"title\": \"앱 업데이트\", \"content\": \"앱이 업데이트 됐어\", \"date\": \"2021-01-01\", \"author\": \"GM\"},\n" +
